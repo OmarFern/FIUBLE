@@ -1,21 +1,11 @@
 from colores import* #importo carpeta colores.py y con * comodin puedo usar todas la funciones 
 
-""" colores = {"Verde" : "\x1b[32m",
-            "Amarillo" : "\x1b[33m",
-            "GrisOscuro" : "\x1b[90m",
-             "Defecto" : "\x1b[39m" ,
-             "Rojo" : "\x1b[31m",
-             "END": "\x1b[0m"
-              }
-
-
-def obtener_color(letra,color):
-    return colores[color] + letra + colores["END"]
- """
-
 #iniciar ale tablero
 ganador=False
 palabra_lista="bardo"
+
+
+
 tablero=[]
 for i in range(5):
     tablero.append([ "?" for l in range(5)])
@@ -25,11 +15,12 @@ contador_credito=0
 while (not ganador) and (contador_credito< 6):
 #----------------------------------pedir datos----------------------------------
 #validacion
-        palabra=input("ingrese una palabra a buscar :")
+        print("Palabra a adivinar: ? ? ? ? ?")
+        palabra=input("Arriesgo :")
         while len(palabra)!=5:
-        #break
+        #break  
                 print(f"la palabra debe tener 5 letras y tiene {len(palabra)}")
-                palabra=input("ingrese una palabra a buscar :")   
+                palabra=input("Arriesgo :")   
         # ganador         
         if palabra==palabra_lista:
             tablero[contador_credito]=[obtener_color( x,"Verde" ) for x in palabra]    
@@ -46,10 +37,7 @@ while (not ganador) and (contador_credito< 6):
                      lista_2.append( obtener_color( palabra[i],"Amarillo" ))
                 else:
                      lista_2.append( obtener_color( palabra[i],"Rojo" ))    
-            tablero[contador_credito]=lista_2   
-
-
-
+            tablero[contador_credito]=lista_2   # ACUMULA EN EL TABLERO PRINCIPAL
 
         # mostar el tablero
         for i in range(5): 
