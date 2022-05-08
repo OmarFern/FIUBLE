@@ -1,14 +1,15 @@
 from initialSetting.colores import obtener_color
-from initialSetting.initial_tablero import tablero
+from initialSetting.initial_tablero import tablero_initial_setting
 from initialSetting.conditions import *
 from validators.len_palabra import validar_longitud_palabra
 from validators.ganador import valida_ganador
 from generadorLista.correcta import palabra_correcta
 
-while (not es_ganador) and (contador_credito< 6):
+tablero = tablero_initial_setting()
+
+while (not es_ganador) and (contador_credito< 5):
   print("Palabra a adivinar: ? ? ? ? ?")
-  palabra=input("Arriesgo :")
-  validar_longitud_palabra(palabra)
+  palabra = validar_longitud_palabra()
   if valida_ganador(palabra,palabra_lista):
     es_ganador=True 
     palabra_correcta(palabra)
@@ -24,10 +25,11 @@ while (not es_ganador) and (contador_credito< 6):
       
       tablero[contador_credito]=lista_2 
   
+  contador_credito+=1
+  print(contador_credito)
   for i in range(5): 
     print(" ".join(tablero[i]))  
 
-  contador_credito+=1
 
 if es_ganador :
     print("ganaste")   
