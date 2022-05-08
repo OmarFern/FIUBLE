@@ -23,4 +23,4 @@ while (not es_ganador) and (contador_credito< 5):
   for i in range(5): 
     print(" ".join(tablero[i]))  
 
-gana_juego(es_ganador)
+gana_juego(es_ganador,palabra_lista)
