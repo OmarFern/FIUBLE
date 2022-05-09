@@ -4,4 +4,4 @@ def msgFail(palabra_lista,puntos):
   print(f"Perdiste un total de {puntos} puntos")
   
   print("")
-  print("")
+  print("") 
