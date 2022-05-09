@@ -3,4 +3,4 @@ def msgSuccess(tiempo,puntos):
   print(f"Obtuviste un total de {puntos} puntos")
   
   print("")
-  print("")
+  print("") 
