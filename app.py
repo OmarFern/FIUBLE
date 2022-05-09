@@ -35,3 +35,5 @@ def app(tablero,palabra_lista,contador_credito,es_ganador,jugador_1,jugador_2,tu
       print(" ".join(tablero[i]))  
 
   return [es_ganador,palabra_lista,finaliza_juego,contador_credito,parcial_ganador,turno]
+
+  
