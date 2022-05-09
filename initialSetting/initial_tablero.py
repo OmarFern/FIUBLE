@@ -1,4 +1,4 @@
-def tablero_initial_setting():
+def initial_tablero():
   tablero=[]
   for i in range(5):
     tablero.append([ "?" for l in range(5)])
