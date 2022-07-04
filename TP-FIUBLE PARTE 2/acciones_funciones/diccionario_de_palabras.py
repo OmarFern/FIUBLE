@@ -41,20 +41,20 @@ def analizador_texto(texto,num_text,LONG):
   while (palabras !=""):
     for palabra in palabras :
       if (palabra.isalpha()) and (palabra!="") and (len(palabra)==LONG) :
-        if palabra.lower() in dicc_palabra:
+        if palabra.upper() in dicc_palabra:
           if num_text ==1:
-            dicc_palabra[palabra.lower()][0]+=1
+            dicc_palabra[palabra.upper()][0]+=1
           elif num_text ==2:
-            dicc_palabra[palabra.lower()][1]+=1
+            dicc_palabra[palabra.upper()][1]+=1
           else:
-            dicc_palabra[palabra.lower()][2]+=1
+            dicc_palabra[palabra.upper()][2]+=1
         else:
           if num_text ==1:
-            dicc_palabra.setdefault(palabra.lower(),[1,0,0])
+            dicc_palabra.setdefault(palabra.upper(),[1,0,0])
           elif num_text ==2:
-            dicc_palabra.setdefault(palabra.lower(),[0,1,0])
+            dicc_palabra.setdefault(palabra.upper(),[0,1,0])
           else:
-            dicc_palabra.setdefault(palabra.lower(),[0,0,1])
+            dicc_palabra.setdefault(palabra.upper(),[0,0,1])
     palabras=leer_Archivo(texto)
 
 def ordenar_palabras(archivo_4):

@@ -230,5 +230,5 @@ def validar_condicion_palabra(textos):
         palabra=input(textos["INGRESAR_PALABRA_TABLERO"]) 
         palabra = formatear_palabra(palabra)
     
-    return palabra.lower() 
+    return palabra.upper() 
   

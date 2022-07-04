@@ -6,11 +6,11 @@ def formatear_linea(linea):
 
 def formatear_palabra(palabra):
     letras = {
-    "á": "a",
-    "é": "e",
-    "í": "i",
-    "ó": "o",
-    "ú": "u"
+    "Á": "A",
+    "É": "E",
+    "Í": "I",
+    "Ó": "O",
+    "Ú": "U"
     }
 
     lista = [x for x in palabra]

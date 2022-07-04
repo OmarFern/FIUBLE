@@ -52,5 +52,6 @@ def mensaje_para_usurio(dicc_jugadores,puntos_ronda,ronda_terminada,textos):
 
   else:
     mensaje_for(dicc_jugadores,puntos_ronda,ronda_terminada)
-    
+  input(f"\n {textos['INPUT_CONTINUAR']}")
+
     

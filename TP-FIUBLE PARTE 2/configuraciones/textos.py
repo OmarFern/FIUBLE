@@ -118,7 +118,8 @@ def texto(idioma):
 
         "BOTON_ACCEDER": "ACCEDER",
 
-        "BOTON_CONFIRMAR": "CONFIRMAR"
+        "BOTON_CONFIRMAR": "CONFIRMAR",
+        "INPUT_CONTINUAR":"ENTER_PARA CONTINUAR"
     }
     
     elif idioma == "en":
