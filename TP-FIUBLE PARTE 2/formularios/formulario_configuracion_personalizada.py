@@ -24,9 +24,9 @@ def formulario_configuracion_personalizada(root,botones,textos):
     partidas_entry = entrada_texto(cantidad_partidas)
     #-----------------------------------------------------------------------------
     frame_botones = marco_visible(configuraciones)
-
+    # entrada de cantidad de jugadores 
     boton_confirmar_personalizada(frame_botones,confirmar,[players_entry,configuraciones,root,botones,letras_entry,partidas_entry,textos]) 
-
+    # vueve al inicio 
     boton_volver(frame_botones,volver,[configuraciones,botones,textos])
 
     return configuraciones

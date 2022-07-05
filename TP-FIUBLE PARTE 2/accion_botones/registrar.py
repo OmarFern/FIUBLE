@@ -5,3 +5,7 @@ def registrarse(lista):
     form_registro.pack()
     cuadro_botones.pack_forget()
     
+    
+#llamando al método pack_forget() para hacerlos invisibles
+#https://www.delftstack.com/es/howto/python-tkinter/how-to-hide-recover-and-delete-tkinter-widgets/
+    

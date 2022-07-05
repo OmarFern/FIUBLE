@@ -165,7 +165,7 @@ def texto(valor,textos):
     valor_a_validar = False
   else:
     if valor_a_validar <= 0:
-      msg_warning(textos["MSJ_NUMEROS_NEGATIVOS"])
+      msg_warning(textos["MSJ_NUMEROS_NEGATIVOS"],textos)
       valor_a_validar = False
   return valor_a_validar
 
